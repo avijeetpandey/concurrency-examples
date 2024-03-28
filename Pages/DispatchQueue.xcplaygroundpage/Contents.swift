@@ -23,3 +23,13 @@ DispatchQueue.main.async {
 }
 
 
+DispatchQueue.main.async {
+    let string = Thread.isMainThread ? "\(#line) running on main thread" : "\(#line) not running on main thread"
+    print(string)
+}
+
+
+DispatchQueue.global().async {
+    let string = Thread.isMainThread ? "\(#line) global running on main thread" : "\(#line) global not running on main thread"
+    print(string)
+}
