@@ -3,5 +3,6 @@
     <pages>
         <page name='Thread'/>
         <page name='DispatchQueue'/>
+        <page name='QueueExample'/>
     </pages>
 </playground>
